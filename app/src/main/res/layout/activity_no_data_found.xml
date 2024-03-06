@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/white"
+    tools:context=".NoDataFoundActivity">
+
+    <TextView
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oops! No Data Found "
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:layout_centerHorizontal="true"
+        android:letterSpacing="0.1"
+        />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@id/h1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nodata_img"
+        android:layout_marginTop="70dp" />
+
+
+
+    <Button
+        android:id="@+id/BackBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Go Back"
+        android:textSize="18dp"
+        android:backgroundTint="@color/gold"
+        android:layout_marginTop="20dp" />
+
+
+
+
+
+</RelativeLayout>

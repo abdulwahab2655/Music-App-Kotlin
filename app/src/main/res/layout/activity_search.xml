@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="70px"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISCOVER SONGS FOR YOUR FAVOURITE ARTIST"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:layout_centerHorizontal="true"
+        android:letterSpacing="0.1"
+        />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/h1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/search_img"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext_bg"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/search_icon"
+            android:padding="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rounded_edittext_bg"/>
+
+        <EditText
+            android:id="@+id/searchET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name of Artist"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:imeOptions="actionSearch"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SearchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_search"
+        android:text="Search"
+        android:textSize="18dp"
+        android:backgroundTint="@color/gold"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/favouriteBtn"
+        android:layout_centerHorizontal="true"
+        android:text="OR"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:id="@+id/favouriteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Go To Favourites"
+        android:textColor="@color/gold"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
